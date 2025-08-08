@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Event from "../Components/Events";
 import Comment from "../Components/Comments"
-import Footer from "../Components/Footer";
 import Image from "../assets/img2.webp";
 import Python from "../assets/img4.avif";
 import JavaScript from "../assets/javascript.avif";
@@ -123,7 +122,10 @@ const Home = () => {
                 </CardContent>
 
                 <CardFooter className="p-4">
-                  <Button className="w-full">View Course</Button>
+                  <Link to={`/course/${course.id}`}>
+                      <Button className="w-full">View Course</Button>
+                  </Link>
+              
                 </CardFooter>
               </Card>
             </CarouselItem>
@@ -174,7 +176,6 @@ const Home = () => {
       </div>
     </section>
     <Comment/>
-    <Footer/>
       </div>
 
  

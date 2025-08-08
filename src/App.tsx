@@ -7,6 +7,9 @@ import About from "./Pages/About"
 import Contact from "./Pages/Contact";
 import Service from "./Pages/Service";
 import Course from "./Pages/Course";
+import CourseDetail from "./Components/Coursedetails";
+import Footer from "./Components/Footer";
+
 
 
 function App() {
@@ -20,9 +23,12 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/course" element={<Course />} />
           <Route path="/contact" element={<Contact />} />
+            <Route path="/course/:id" element={<CourseDetail />} />
         </Routes>
       </div>
+      <Footer />
     </>
+    
   );
 }
 

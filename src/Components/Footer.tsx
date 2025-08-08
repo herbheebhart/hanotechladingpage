@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-sky-950 text-white py-10 px-6 mt-20">
+    <footer className="bg-gray-100 text-black py-10 px-6 mt-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
         {/* About */}
@@ -84,7 +84,7 @@ export default function Footer() {
 
         <motion.a
           whileHover={{ scale: 1.2 }}
-          href="mailto:hello@hanotech.com"
+          href="mailto:hanotechk@gmail.com"
           className="p-3 bg-orange-400 rounded-full text-sky-950"
         >
           <Mail size={20} />
