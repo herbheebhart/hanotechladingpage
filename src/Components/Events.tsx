@@ -1,6 +1,6 @@
 import imag from "../assets/wimg.png";
 import { Link } from 'react-router-dom';
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../Components/ui/card";
 import { Instagram, Mail, Phone } from "lucide-react";
 
 function Events() {

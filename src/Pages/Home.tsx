@@ -7,17 +7,17 @@ import JavaScript from "../assets/javascript.avif";
 import network from "../assets/network.avif";
 import userinterface from "../assets/userinterface.avif"
 import graphics from "../assets/graphics.avif"
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from '../components/ui/button';
+import { Card, CardContent, CardFooter } from "../Components/ui/card";
+import { Button } from '../Components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "../Components/ui/carousel";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
+
 
 
 
