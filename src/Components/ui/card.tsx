@@ -1,6 +1,7 @@
 import * as React from "react"
 
-import { cn } from "@/lib/utils"
+// Update the path below if your utils file is located elsewhere
+import { cn } from "../../lib/utils"
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
