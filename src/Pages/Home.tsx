@@ -7,6 +7,7 @@ import JavaScript from "../assets/javascript.avif";
 import network from "../assets/network.avif";
 import userinterface from "../assets/userinterface.avif"
 import graphics from "../assets/graphics.avif"
+import siteEngineer from "../assets/img3.jpg"
 import { Card, CardContent, CardFooter } from "../Components/ui/card";
 import { Button } from '../Components/ui/button';
 import {
@@ -33,34 +34,42 @@ const Home = () => {
     description:
       "Learn to build modern websites with HTML, CSS, JavaScript, and React.",
   },
+    {
+    id : 2,
+    title: "Quantity surveying consultancy services",
+    image: siteEngineer,
+    description:"Preparation of contract document,value Engineering and project management"
+  },
   {
-    id:2,
+    id:3,
     title: "Graphic Design",
     image: graphics,
     description:
       "Master design principles and tools like Photoshop, Illustrator, and Figma.",
   },
   {
-    id:3,
-    title: "Tech for Kids",
+    id:4,
+    title: "Python",
     image: Python,
     description:
-      "Fun tech programs for kids aged 5–17: coding, robotics, animation & more.",
+      "Learn python for Web developmet from basics to Advance",
   },
     {
-        id:4,
-    title: "Tech for Kids",
+        id:5,
+    title: "UI/UX",
     image: userinterface,
     description:
-      "Fun tech programs for kids aged 5–17: coding, robotics, animation & more.",
+      "Learn wireframe and strcture from expert from begining to advance",
   },
     {
-        id: 5,
-    title: "Tech for Kids",
+       id: 6,
+    title: "Networking",
     image: network,
     description:
-      "Fun tech programs for kids aged 5–17: coding, robotics, animation & more.",
+      "Learn Netwoking from expert from beginning to advance",
   },
+  
+
 ];
 
   return (
@@ -98,7 +107,7 @@ const Home = () => {
      {/* Courses Section */}
     <section className="py-12 px-4 bg-white">
       <h2 className="text-3xl font-bold text-center mb-8 text-orange-600">
-        Our Courses
+        Our packages
       </h2>
 
       <Carousel className="w-full max-w-[70%] mx-auto" >
@@ -121,12 +130,20 @@ const Home = () => {
                   </p>
                 </CardContent>
 
-                <CardFooter className="p-4">
+                <div className="flex flex-row ">
+                  <CardFooter className="p-4">
                   <Link to={`/course/${course.id}`}>
                       <Button className="w-full">View Course</Button>
                   </Link>
               
                 </CardFooter>
+                <CardFooter className="p-4">
+                  <Link to={`/course/${course.id}`}>
+                      <Button className="w-full">Book a service</Button>
+                  </Link>
+              
+                </CardFooter>
+                </div>
               </Card>
             </CarouselItem>
           ))}
@@ -148,27 +165,27 @@ const Home = () => {
           className="p-6 shadow-lg"
         >
           <Card className="p-6 shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Expert Instructors</h3>
+            <h3 className="text-xl font-semibold mb-2">Expert professionals and Instructors</h3>
             <p className="text-gray-600">
-              Learn from industry professionals with years of experience.
+              Services from seasoned costruction and IT experts and Learning from industry professionals with years of experience.
             </p>
           </Card>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.05 }} className="p-6 shadow-lg">
             <Card className="p-6 shadow-lg"> 
-          <h3 className="text-xl font-semibold mb-2">Hands-On Learning</h3>
+          <h3 className="text-xl font-semibold mb-2">Hands-On Learning and scheduling </h3>
           <p className="text-gray-600">
-            Practical projects and real-world applications to enhance your skills.
+            Practical projects and real-world applications to enhance your skills, with tailored scheduling matching your preference.
           </p>
         </Card>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.05 }} className="p-6 shadow-lg">
                <Card className="p-6 shadow-lg">
-               <h3 className="text-xl font-semibold mb-2">Flexible Schedule</h3>
+               <h3 className="text-xl font-semibold mb-2">latest construction trends</h3>
                 <p className="text-gray-600">
-                  Online and in-person classes to fit your lifestyle.
+                 with modern design, updated pricing and multitude discharge of construction methodology offered
                 </p>
                 </Card>
           </motion.div>
