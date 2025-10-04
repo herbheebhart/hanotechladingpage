@@ -1,18 +1,6 @@
-
-
-// function Contact() {
-//   return (
-//     <div>
-//       Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quo harum aliquam id sint facilis itaque quaerat eligendi odit animi?
-//     </div>
-//   )
-// }
-
-// export default Contact
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Image from "../assets/img2.webp";
-import { div } from "framer-motion/client";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");

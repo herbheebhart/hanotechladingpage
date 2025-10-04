@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { PlusIcon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
 import { Link } from "react-router-dom";
 import Image from "../assets/img2.webp"
 
